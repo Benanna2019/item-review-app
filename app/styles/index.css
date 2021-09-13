@@ -1,0 +1,30 @@
+/* 
+ * when the user visits this page, this style will apply, when they leave, it
+ * will get unloaded, so don't worry so much about conflicting styles between
+ * pages!
+ */
+
+
+.box {
+     margin: auto;
+     width: 300px; 
+}
+
+
+
+/* 404 styles */
+
+.Page_Container {
+    margin: auto; 
+    padding-top: 2rem; 
+    text-align: left;
+    width: 850px; 
+    margin-right: 10rem; 
+    
+}
+
+li {
+    list-style: circle; 
+    margin-bottom: .5rem; 
+}
+
