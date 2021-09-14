@@ -4,27 +4,22 @@
  * pages!
  */
 
-
 .box {
-     margin: auto;
-     width: 300px; 
+  margin: auto;
+  width: 300px;
 }
-
-
 
 /* 404 styles */
 
 .Page_Container {
-    margin: auto; 
-    padding-top: 2rem; 
-    text-align: left;
-    width: 850px; 
-    margin-right: 10rem; 
-    
+  margin: auto;
+  padding-top: 2rem;
+  text-align: left;
+  width: 850px;
+  margin-right: 10rem;
 }
 
 li {
-    list-style: circle; 
-    margin-bottom: .5rem; 
+  list-style: circle;
+  margin-bottom: 0.5rem;
 }
-

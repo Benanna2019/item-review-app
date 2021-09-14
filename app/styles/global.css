@@ -1,23 +1,22 @@
 :root {
---font-family-sans: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+  --font-family-sans: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
     Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
---font-family-mono: "SFMono-Regular", Consolas, "Roboto Mono",
+  --font-family-mono: "SFMono-Regular", Consolas, "Roboto Mono",
     "Droid Sans Mono", "Liberation Mono", Menlo, Courier, monospace;
---color-error: #bf4a3f;
---color-primary: #1159a6;
---color-primary-bright: #007bff;
---color-nagamasa-yellow: #face69; 
---color-primary-light: #3f94bf;
---color-primary-xlight: #c7e4f2;
---color-body: #222;
---color-body-background: #fafafa;
---color-focus-outline: #1eaedb;
---color-input-background: #fff;
---color-input-border: #d1d1d1;
---color-rule-border: #e1e1e1;
---color-table-cell-border: #eee;
+  --color-error: #bf4a3f;
+  --color-primary: #1159a6;
+  --color-primary-bright: #007bff;
+  --color-nagamasa-yellow: #face69;
+  --color-primary-light: #3f94bf;
+  --color-primary-xlight: #c7e4f2;
+  --color-body: #222;
+  --color-body-background: #fafafa;
+  --color-focus-outline: #1eaedb;
+  --color-input-background: #fff;
+  --color-input-border: #d1d1d1;
+  --color-rule-border: #e1e1e1;
+  --color-table-cell-border: #eee;
 }
-
 
 :focus:not(:focus-visible) {
   outline: none;
@@ -25,12 +24,13 @@
 
 body {
   font-family: sans-serif;
+  background-color: #e5e4e4;
 }
 
 footer {
   text-align: center;
   color: #ccc;
-  margin: auto; 
+  margin: auto;
   padding-top: 80px;
 }
 
@@ -38,30 +38,30 @@ footer {
   position: fixed;
   top: 0;
   bottom: 0;
-  left: 0; 
+  left: 0;
   overflow-y: auto;
   overflow-x: hidden;
   scrollbar-width: thin;
   -webkit-overflow-scrolling: touch;
   width: 250px;
-  background: #01898D;
+  background: #01898d;
   transition: left 200ms ease;
   z-index: 1;
 }
 
 -webkit-scrollbar {
-    width: 12px;
+  width: 12px;
 }
 
 -webkit-scrollbar-track {
-    background-color: #01898D; 
+  background-color: #01898d;
 }
 
 -webkit-scrollbar-thumb {
-    background-color: rgba(#fff, 0.5);
-    border: 3px solid transparent;
-    border-radius: 9px;
-    background-clip: content-box;
+  background-color: rgba(#fff, 0.5);
+  border: 3px solid transparent;
+  border-radius: 9px;
+  background-clip: content-box;
 }
 
 #content {
@@ -117,8 +117,8 @@ footer {
 a {
   color: var(--color-nagamasa-yellow);
   text-decoration: none;
-  font-size: 1.5rem; 
-  text-shadow: 2px 1.4px 1.5px rgba(0,0,0,0.5);
+  font-size: 1.5rem;
+  text-shadow: 2px 1.4px 1.5px rgba(0, 0, 0, 0.5);
 }
 
 a:active {
@@ -126,60 +126,57 @@ a:active {
 }
 
 nav {
-  margin-top: 2rem; 
-  display: block; 
+  margin-top: 2rem;
+  display: block;
 }
 
 ul {
   list-style: none;
   list-style-type: none;
-  padding: 0; 
-  margin: 0; 
+  padding: 0;
+  margin: 0;
 }
 
-code { 
+code {
   background-color: var(--color-primary);
-  color: var(--color-body-background); 
-  padding: .2rem; 
-  border-radius: 5px; 
+  color: var(--color-body-background);
+  padding: 0.2rem;
+  border-radius: 5px;
 }
-
 
 input,
 textarea {
-    width: 200px; 
-    height: 1.7rem; 
-    border: var(--color-rule-border); 
-    background-color: var(--color-primary);
-    color: var(--color-body-background); 
-    border-radius: .25rem;
-    font-size: 1rem; 
-    align-self: center;
+  width: 200px;
+  height: 1.7rem;
+  border: var(--color-rule-border);
+  background-color: var(--color-primary);
+  color: var(--color-body-background);
+  border-radius: 0.25rem;
+  font-size: 1rem;
+  align-self: center;
 }
 
 textarea:focus {
-  width: 400px; 
-  height: 100px; 
+  width: 400px;
+  height: 100px;
 }
 
-
-input::placeholder, 
-textarea::placeholder
-{
-    color: var(--color-input-border); 
+input::placeholder,
+textarea::placeholder {
+  color: var(--color-input-border);
 }
 
-blockquote { 
-  border-left: 3px solid var(--color-primary); 
-  padding-left: 1rem; 
+blockquote {
+  border-left: 3px solid var(--color-primary);
+  padding-left: 1rem;
 }
 
-button {  
+button {
   height: 2.5rem;
   width: 4rem;
-  background-color: #01898D;  
-  border-radius: .5rem; 
-  border: none; 
+  background-color: #01898d;
+  border-radius: 0.5rem;
+  border: none;
   text-align: center;
   text-transform: uppercase;
   -webkit-animation-duration: 1s;
@@ -197,23 +194,26 @@ button:hover {
   animation-name: bounce;
   -moz-animation-name: bounce;
   box-shadow: 0 7px 30px -10px rgba(36, 65, 80, 0.842);
-
 }
 
 @keyframes bounce {
-	0%, 100%, 20%, 50%, 80% {
-		-webkit-transform: translateY(0);
-		-ms-transform:     translateY(0);
-		transform:         translateY(0)
-	}
-	40% {
-		-webkit-transform: translateY(-30px);
-		-ms-transform:     translateY(-30px);
-		transform:         translateY(-30px)
-	}
-	60% {
-		-webkit-transform: translateY(-15px);
-		-ms-transform:     translateY(-15px);
-		transform:         translateY(-15px)
-	}
+  0%,
+  100%,
+  20%,
+  50%,
+  80% {
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-30px);
+    -ms-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  60% {
+    -webkit-transform: translateY(-15px);
+    -ms-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
 }
