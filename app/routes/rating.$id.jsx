@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { redirect, json, useRouteData } from "remix";
 import { prisma } from "~/db";
-import RatingIcon from "~/components/RatingIcon";
+import RatingIcon from "~/components/RatingForm";
 import stylesURL from "~/styles/single-rating.css";
 import { Link, NavLink } from "react-router-dom";
 
