@@ -64,7 +64,6 @@ export default function RatingPage() {
 
   return (
     <div className="Page_Container">
-      <p>ratings</p>
       <div className="itemTitle">{data.itemTitle}</div>
       <div>
         <form method="post" action={`/rating/${data.id}`}>
